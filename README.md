@@ -28,9 +28,7 @@ We want to evaluate the proximity between the different categories using the ant
 $$
 \begin{equation}
 \begin{gathered}
-Sim(C_i, C_j) = 1 - \frac{1}{2} \biggl[ 
-\max\bigl(Sim_{wp}(C_i, S_{i1}), \ldots, Sim_{wp}(C_i, S_{in})\bigr) 
-+ \max\bigl(Sim_{wp}(C_j, S_{j1}), \ldots, Sim_{wp}(C_j, S_{jn})\bigr) \biggr]
+Sim(C_i, C_j) = 1 - \frac{1}{2} \biggl[ \max\bigl(Sim_{wp}(C_i, S_{i1}), \ldots, Sim_{wp}(C_i, S_{in})\bigr) + \max\bigl(Sim_{wp}(C_j, S_{j1}), \ldots, Sim_{wp}(C_j, S_{jn})\bigr) \biggr]
 \end{gathered}
 \end{equation}
 $$
