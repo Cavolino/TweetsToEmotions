@@ -1,10 +1,12 @@
 # Project 2. Kaggle Text to Emotion Dataset 2 
 
+**Abstract:** *In this project, we analyzed a collection of 40K Twitter records classified in 13 different categories. Our investigation
+spans different methodologies to enhance the understanding of the emotions in text data. We conducted an initial exploration of the dataset. Then we categorized the different tweets using different approaches: Empath, LDA, and BerTopic. Given as input the set of tweets belonging to the same category, the common goal of these three approaches was to identify keywords and check their compatibility with the emotion corresponding to the input category. We then investigated in more detail the tweets of each emotion. In particular, we evaluate the redundancy and the diversity between tweets of the same category. We also studied the agreement of each record with the antonyms of the emotion associated with it. Finally, we implemented several algorithms to increase the classification rate of the different categories.*
 
 
-**Dataset**: https://www.kaggle.com/datasets/pashupatigupta/emotion-detection-from-text/data?select=tweet_emotions.csv <br>
-**Dataset info**: 40K records Twitter dataset, classified into 13 categories: *neutral, worry, happiness, sadness, love, surprise, fun sentiment, relief, hate, empty, enthusiasm, boredom, anger*.
+[**Dataset info:**](https://www.kaggle.com/datasets/pashupatigupta/emotion-detection-from-text/data?select=tweet_emotions.csv) 40K records Twitter dataset, classified into 13 categories: *neutral, worry, happiness, sadness, love, surprise, fun sentiment, relief, hate, empty, enthusiasm, boredom, anger*.
 
+## Requests
 
 ### 1. Initial exploration: 
 You may inspire from some existing programs in Kaggle handling the same dataset, write a script that outputs the histogram of the different categories. Comment on the distribution of the training samples across various categories.
@@ -61,7 +63,7 @@ Identify potential improvement of your choice and identify appropriate literatur
 <hr>
 <br><br>
 
-<div style="text-align: right">
+<div style="text-align: right; font-size: 18px">
 
 *Nov 2023*<br>
 **Davide Moricoli, Andrea Cantore**
