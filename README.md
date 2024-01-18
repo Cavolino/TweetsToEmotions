@@ -1,13 +1,20 @@
-# Project 2. Kaggle Text to Emotion Dataset 2 
+# <center>Tweets to Emotions</center>
 
-**Abstract:** *In this project, we analyzed a collection of 40K Twitter records classified in 13 different categories. Our investigation
-spans different methodologies to enhance the understanding of the emotions in text data. We conducted an initial exploration of the dataset. Then we categorized the different tweets using different approaches: Empath, LDA, and BerTopic. Given as input the set of tweets belonging to the same category, the common goal of these three approaches was to identify keywords and check their compatibility with the emotion corresponding to the input category. We then investigated in more detail the tweets of each emotion. In particular, we evaluate the redundancy and the diversity between tweets of the same category. We also studied the agreement of each record with the antonyms of the emotion associated with it. Finally, we implemented several algorithms to increase the classification rate of the different categories.*
+<p align="center">
+  <a href="#track">Track</a> •
+  <a href="#paper">Paper</a> •
+  <a href="#technologies">Technologies</a> •
+  <a href="#notebook">Notebook</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#authors">Authors</a>
+</p>
 
+**Abstract**: *In this project, we analyzed a collection of 40K Twitter records classified in 13 different categories. Our investigation spans different methodologies to enhance the understanding of the emotions in text data. We conducted an initial exploration of the dataset. Then we categorized the different tweets using different approaches: Empath, LDA, and BerTopic. Given as input the set of tweets belonging to the same category, the common goal of these three approaches was to identify keywords and check their compatibility with the emotion corresponding to the input category. We then investigated in more detail the tweets of each emotion. In particular, we evaluate the redundancy and the diversity between tweets of the same category. We also studied the agreement of each record with the antonyms of the emotion associated with it. Finally, we implemented several algorithms to increase the classification rate of the different categories.*
 
-[**Dataset info:**](https://www.kaggle.com/datasets/pashupatigupta/emotion-detection-from-text/data?select=tweet_emotions.csv) 40K records Twitter dataset, classified into 13 categories: *neutral, worry, happiness, sadness, love, surprise, fun sentiment, relief, hate, empty, enthusiasm, boredom, anger*.
+#### Datasets: 
+- [tweet_emotions.csv](https://www.kaggle.com/datasets/pashupatigupta/emotion-detection-from-text/data?select=tweet_emotions.csv): 40K records Twitter dataset, classified into 13 sentiment categories. "The data is basically a collection of tweets annotated with the emotions behind them. We have three columns tweet_id, sentiment, and content. In "content" we have the raw tweet. In "sentiment" we have the emotion behind the tweet."
 
-## Requests
-
+## Track: 
 ### 1. Initial exploration: 
 You may inspire from some existing programs in Kaggle handling the same dataset, write a script that outputs the histogram of the different categories. Comment on the distribution of the training samples across various categories.
 ### 2. Dataframse:
@@ -54,15 +61,49 @@ Select various choices for size of feature vector and choose alternative feature
 We want to find out whether a change in category design can influence the results. For this purpose, delete the categories that possess a relatively small number of samples from the classification scheme. Then, repeat 9) and determine the new classification rate for each category. 
 ### 12. Classification Rate with Merging:
 Repeat 11 by merging the categories of small sample into a single meta-category, and repeat 11) accordingly. 
-### 13. 
+### 13. Improvements
 Identify potential improvement of your choice and identify appropriate literature to comment on the findings.
 
-<br>
+
+## Paper:
+[Tweets To Emotion Paper](./tweets_to_emotion-paper.pdf): The primary objective of this research is to delve deeply into the pre-existing categorization scheme. The aim is to comprehensively analyze and gain insights into the underlying principles governing these categories. Furthermore, the overarching goal of this project is to enhance the efficacy of classification methodologies through the application of machine-learning techniques.
+
+## Technologies:
+<p align="left">     
+    <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> 
+        <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> 
+    </a> 
+    <a href="https://www.python.org" target="_blank" rel="noreferrer"> 
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> 
+    </a>  
+    <a href="https://numpy.org/" target="_blank" rel="noreferrer">
+        <img src="https://numpy.org/images/logo.svg" alt="NumPy" width="40" height="40" />
+    </a>    
+    <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> 
+    </a>
+    <a href="https://colab.research.google.com/" target="_blank" rel="noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/d/d0/20221103151430%21Google_Colaboratory_SVG_Logo.svg/120px-Google_Colaboratory_SVG_Logo.svg.png" alt="google_colab" width="40" height="40" />
+    </a>
+</p>
+
+## Notebook:
+[Tweets To Emotion Notebook](./Tweets_to_Emotions.ipynb)<br>
+#### How To Use:
+- Download the [Dataset](#datasets).
+- Download the [Notebook](./Tweets_to_Emotions.ipynb).
+- Upload the downloaded dataset into [Google Colab](https://colab.research.google.com/) using the provided code block in the notebook.
+- Replace the path of this line of the third block of code:
+```python
+data = pd.read_csv('tweet_emotions.csv')
+```
+- Run all the Notebook.
+
+<br><br>
 <hr>
 <br><br>
 
-<div style="text-align: right; font-size: 18px">
+##### Authors:
 
 *Nov 2023*<br>
 **Davide Moricoli, Andrea Cantore**
-</div>
