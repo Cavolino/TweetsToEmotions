@@ -1,4 +1,4 @@
-# <center>Tweets to Emotions</center>
+# <p align="center">Tweets to Emotions</p>
 
 <p align="center">
   <a href="#track">Track</a> •
